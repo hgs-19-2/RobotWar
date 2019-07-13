@@ -1,11 +1,12 @@
 #pragma once
 #include"Fightingjudgement.h"
 #include"FileIO.h"
-#include"Movejudgement.h"
 #include"RobotData.h"
 #include"RobotList.h"
 #include"RobotSkill.h"
 #include"gamemap.h"
+#include<memory>
+#include<math.h>
 
 class Model :public Proxy_PropertyNotification<Model>
 {
@@ -15,15 +16,22 @@ public:
 	void stageinit(int stagenum);
 	void roundinit();
 	bool canselect(int x,int y);
-	Robotdata* select(int x,int y);
+	shared_ptr<Robotdata> select(int x, int y);
 	bool ifendround();
 	int ifendstage();
-	void playermove(int x1,int y1,int x2,int y2);
+	int Movejudge(location selected, int x2, int y2, int robottype);
+	bool playermove(location selected, int x2, int y2);
 	bool playerattack(int x1,int y1,int x2,int y2,int skillnum);
 	void cpumove();
+	bool querry(int a,int b,int c);
+	//location getselected();
+	//void setselected(int x,int y);
+	shared_ptr<Robotlist> gethuman();
+	shared_ptr<Robotlist> getcpu();
 private:
 	gamemap gmap;
 	Robotlist playerlist[2];
+	location selected;
 };
 
 vector<Robotskill> Robotskilllist;

@@ -23,10 +23,16 @@ void gamemap::move(location currentlocation, int movetox, int movetoy) {
 	map[movetox][movetoy] = temp;
 }
 
-bool gamemap::ifhaverobot(int x, int y) {
-	if (map[x][y] == -1)
+bool gamemap::ifhavehumanrobot(int x, int y) {
+	if (map[x][y] == -1||map[x][y]>=maxrobot)
 		return false;
 	return true;
+}
+
+bool gamemap::ifhavecpurobot(int x, int y) {
+	if (map[x][y] >= maxrobot)
+		return true;
+	return false;
 }
 
 int gamemap::getrobot(int x, int y) {

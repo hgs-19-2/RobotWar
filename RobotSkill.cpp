@@ -1,5 +1,5 @@
-#include"RobotData.h"
-#include<cstring>
+#include"RobotSkill.h"
+#include<string>
 
 Robotskill::Robotskill(char* na, int dmg,int dis, int acc,int mtimes) {
 	strcpy(name, na);

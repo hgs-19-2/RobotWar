@@ -19,7 +19,7 @@ void Robotlist::done(int num) {
 void Robotlist::reset() {
 	int i = getrobotnumber();
 	for (int j = 0; j < i; j++)
-		if (playerrobot[j].getnowhp)
+		if (playerrobot[j].getnowhp())
 			ifdone[j] = false;
 }
 

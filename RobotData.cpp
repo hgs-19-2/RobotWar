@@ -1,5 +1,5 @@
-#include"RobotData.h"
-#include<cstring>
+#include"Model.h"
+#include<string>
 
 Robotdata::Robotdata(char* na, int mhp, int nhp, int range, int sp, int de) {
 	strcpy(name, na);
