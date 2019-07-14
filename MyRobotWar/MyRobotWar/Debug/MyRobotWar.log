@@ -1,0 +1,199 @@
+﻿  App.cpp
+  class any is only available with C++17 or later.
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.h(56): error C2027: 使用了未定义类型“Window”
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.h(42): note: 参见“Window”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.h(58): error C2027: 使用了未定义类型“Window”
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.h(42): note: 参见“Window”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\iostream(14): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+  Command.cpp
+  class any is only available with C++17 or later.
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\string(20): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.cpp(8): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\iostream(14): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.cpp(8): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.cpp(8): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.cpp(10): error C2039: “any_cast”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\iostream(14): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.cpp(10): error C2065: “any_cast”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.cpp(10): error C2275: “ThreeInt”: 将此类型用作表达式非法
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\common.h(11): note: 参见“ThreeInt”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.cpp(10): error C2065: “param”: 未声明的标识符
+  Common.cpp
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\common.cpp(5): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+  ComputerLogic.cpp
+  class any is only available with C++17 or later.
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+  Fileio.cpp
+  class any is only available with C++17 or later.
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\fileio.cpp(58): error C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdlib.h(1323): note: 参见“itoa”的声明
+  gamemap.cpp
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\gamemap.cpp(5): error C3867: “std::vector<int,std::allocator<_Ty>>::size”: 非标准语法；请使用 "&" 来创建指向成员的指针
+          with
+          [
+              _Ty=int
+          ]
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\gamemap.cpp(21): error C3867: “location::getlocationx”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\gamemap.cpp(21): error C2107: 非法索引，不允许间接寻址
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\gamemap.cpp(22): error C3867: “location::getlocationx”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\gamemap.cpp(22): error C2107: 非法索引，不允许间接寻址
+  Model.cpp
+  class any is only available with C++17 or later.
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\model.cpp(69): error C2660: “Model::Movejudge”: 函数不接受 3 个参数
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\model.h(23): note: 参见“Model::Movejudge”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\model.cpp(101): error C3867: “Robotlist::done”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\model.cpp(101): error C2109: 下标要求数组或指针类型
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\model.cpp(123): error C2660: “gamemap::getrobot”: 函数不接受 0 个参数
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\gamemap.h(15): note: 参见“gamemap::getrobot”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\model.cpp(134): error C3867: “location::getlocationx”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\model.cpp(134): error C3867: “location::getlocationy”: 非标准语法；请使用 "&" 来创建指向成员的指针
+  Movejudgement.cpp
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\movejudgement.cpp(6): error C2065: “Robotdatalist”: 未声明的标识符
+  RobotData.cpp
+  class any is only available with C++17 or later.
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\robotdata.cpp(5): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+  test.cpp
+  class any is only available with C++17 or later.
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.h(56): error C2027: 使用了未定义类型“Window”
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.h(42): note: 参见“Window”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.h(58): error C2027: 使用了未定义类型“Window”
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.h(42): note: 参见“Window”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\iostream(14): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+  View.cpp
+  class any is only available with C++17 or later.
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.h(56): error C2027: 使用了未定义类型“Window”
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.h(42): note: 参见“Window”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.h(58): error C2027: 使用了未定义类型“Window”
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.h(42): note: 参见“Window”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(98): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(120): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(120): error C2065: “any”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(120): error C2146: 语法错误: 缺少“;”(在标识符“param”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(120): error C2039: “make_any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(120): error C2065: “make_any”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(120): error C2275: “ThreeInt”: 将此类型用作表达式非法
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\common.h(11): note: 参见“ThreeInt”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(120): error C2059: 语法错误:“)”
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(121): error C2039: “any_cast”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(121): error C2065: “any_cast”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(121): error C2275: “ThreeInt”: 将此类型用作表达式非法
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\common.h(11): note: 参见“ThreeInt”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(121): error C2059: 语法错误:“>”
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(123): error C2065: “param”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(143): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(143): error C2065: “any”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(143): error C2146: 语法错误: 缺少“;”(在标识符“param”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(143): error C2039: “make_any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(143): error C2065: “make_any”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(143): error C2275: “ThreeInt”: 将此类型用作表达式非法
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\common.h(11): note: 参见“ThreeInt”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(143): error C2059: 语法错误:“)”
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(144): error C2039: “any_cast”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(144): error C2065: “any_cast”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(144): error C2275: “ThreeInt”: 将此类型用作表达式非法
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\common.h(11): note: 参见“ThreeInt”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(144): error C2059: 语法错误:“>”
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(146): error C2065: “param”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(164): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(164): error C2065: “any”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(164): error C2146: 语法错误: 缺少“;”(在标识符“param”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(164): error C2039: “make_any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(164): error C2065: “make_any”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(164): error C2275: “ThreeInt”: 将此类型用作表达式非法
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\common.h(11): note: 参见“ThreeInt”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(164): error C2059: 语法错误:“)”
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(165): error C2039: “any_cast”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(165): error C2065: “any_cast”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(165): error C2275: “ThreeInt”: 将此类型用作表达式非法
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\common.h(11): note: 参见“ThreeInt”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(165): error C2059: 语法错误:“>”
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(167): error C2065: “param”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(175): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(175): error C2065: “any”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(175): error C2146: 语法错误: 缺少“;”(在标识符“param”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(175): error C2039: “make_any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(175): error C2065: “make_any”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(175): error C2275: “ThreeInt”: 将此类型用作表达式非法
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\common.h(11): note: 参见“ThreeInt”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(175): error C2059: 语法错误:“)”
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(176): error C2039: “any_cast”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(176): error C2065: “any_cast”: 未声明的标识符
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(176): error C2275: “ThreeInt”: 将此类型用作表达式非法
+  c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\common.h(11): note: 参见“ThreeInt”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(176): error C2059: 语法错误:“>”
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\view.cpp(178): error C2065: “param”: 未声明的标识符
+  ViewModel.cpp
+  class any is only available with C++17 or later.
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+  ViewModelSink.cpp
+  class any is only available with C++17 or later.
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\array(17): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\etlbase.h(30): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C2039: “any”: 不是“std”的成员
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\string(20): note: 参见“std”的声明
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\users\admin\desktop\c++小学期\myrobotwar\myrobotwar\command.h(33): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+  正在生成代码...
