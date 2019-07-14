@@ -1,6 +1,7 @@
 #pragma once
 #include<vector>
 #include"RobotList.h"
+//robotlist ÀïµÄlocation
 using std::vector;
 #define Maxsize 20
 #define maxrobot 10

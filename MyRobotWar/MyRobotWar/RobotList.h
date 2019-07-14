@@ -1,10 +1,11 @@
 //common
 #pragma once
 #include"RobotData.h"
-#include<vector>
-using std::vector;
+//#include<vector>
+//using std::vector;
 
-class location {
+class location
+{
 public:
 	void setlocation(int m, int n);
 	int getlocationx();
@@ -14,7 +15,8 @@ private:
 	int y;
 };
 
-class Robotlist {
+class Robotlist
+{
 public:
 	void setlist(vector<Robotdata>&Robotdatalist,vector<int>&typelist,vector<location>&locations);
 	int getrobotnumber();
@@ -24,6 +26,7 @@ public:
 	vector<location> Robotlocation;
 	bool ifalldone();
 	bool ifonedone(int num);
+	bool ifalldead();
 private:
 	int numofrobot;
 	vector<bool> ifdone;

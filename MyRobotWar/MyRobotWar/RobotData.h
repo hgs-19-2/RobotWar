@@ -1,12 +1,12 @@
 
 #pragma once
 #include"Common.h"
-#include<vector>
-using std::vector;
+//#include<vector>
+//using std::vector;
 
 class Robotdata {
 public:
-	Robotdata(char* na, int mhp, int nhp, int range, int sp, int de);
+	Robotdata(string na, int mhp, int nhp, int range, int sp, int de);
 	int getmaxhp();
 	int getnowhp();
 	int getmoverange();
@@ -15,12 +15,13 @@ public:
 	int changehp(int change);
 	void Move(int m);
 	int getcanmove();
-	char* getname();
+	string getname();
 	void setskill(vector<int>skilltype);
 	int getskillnum();
 	Robotskill&getskillinfo(int num);
+	void reset();
 private:
-	char name[20];
+	string name;
 	int maxhp;
 	int nowhp;
 	int moverange;

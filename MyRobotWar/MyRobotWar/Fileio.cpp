@@ -1,6 +1,6 @@
 #include"Model.h"
 
-void Robotfile::read() {
+void Model::readrobot() {
 	ifstream rob("Robotdata.txt");
 
 	while (!rob.eof()) {
@@ -33,7 +33,7 @@ void Robotfile::read() {
 	rob.close();
 }
 
-void Skillfile::read() {
+void Model::readskill() {
 	ifstream skl("Skilldata.txt");
 	while (!skl.eof()) {
 		char name[20];
@@ -54,21 +54,20 @@ void Skillfile::read() {
 }
 
 void Model::readstage(int stagenum) {
-	char stagen[3];
-	itoa(stagenum, stagen, 10);
-	string filename = "Stage";
-	for (int i = 0; i < 3 && stagen[i] != '\0'; i++)
-		filename += stagen[i];
+	//char stagen[3];
+	string stagen = to_string(stagenum);
+	//itoa(stagenum, stagen, 10);
+	string filename = "Stage" + stagen + ".txt";
 	ifstream sta(filename);
 	gmap.setmap();
-	while (!sta.eof())
+	//while (!sta.eof())
 		for (int i = 0; i < 2; i++) {
 			char num[4];
 			sta.getline(num, 4, '#');
 			int robnum = atoi(num);
 			vector<int> robtype;
 			vector<location> loc;
-			for (int j; j < robnum; j++) {
+			for (int j=0; j < robnum; j++) {
 				sta.getline(num, 4, '#');
 				robtype.push_back(atoi(num));
 				sta.getline(num, 4, '#');

@@ -1,16 +1,15 @@
 #pragma once
 //#include "view/BusLabel.h"
-#include <graphics.h>
-#include <conio.h>
-#include <string>
-using namespace std;
+//#include <graphics.h>
+//#include <conio.h>
+//#include <string>
+//using namespace std;
 //#include "sinks/MainWindowPropertySink.h"
 //#include "sinks/MainWindowCommandSink.h"
 //view
 #include "etlbase.h"
 #include "Common.h"
-/*
-class Robot
+/*class Robot
 {
 private:
 	shared_ptr<int> x;//shared_ptr<int> x?
@@ -35,9 +34,7 @@ public:
 	void UpdateRobot();
 	
 	bool IsChosen() { return *chosen; }
-};
-*/
-
+};*/
 
 class Window;
 class WindowPropertySink:public IPropertyNotification
@@ -45,47 +42,16 @@ class WindowPropertySink:public IPropertyNotification
 private:
 	Window* m_pw;
 public:
-	WindowPropertySink(Window* pw) throw() :m_pw(pw) {}
-	virtual void OnPropertyChanged(const std::string& str) {
-		if (str == "robots")
-		{
-			IMAGE background;
-			loadimage(&background, "picture\\background.jpg");
-			putimage(50, 0, &background);
-			//robots
-			for (int i = 0; i < (*(m_pw->robots)).size(); i++)
-			{
-				(*(m_pw->robots))[i].ShowoneRobot();
-			}
-			//information of players
-			outtextxy(20, 20, "Íæ¼Ò");
-			outtextxy(600, 20, "µçÄÔ");
-		}
-		//if (str == "Robot")
-		/*	int i = atoi(str.c_str());
-			m_pw->robots[i].UpdateRobot();*/
-		
-		/*if (str == "Stop_Number") {
-			m_pW->m_lblStopNumber.Update();
-		}
-		else if (str == "city-name") {
-			m_pW->m_lblCityName.Update();
-		}*/
-	}
+	WindowPropertySink(Window* pw) throw();
+	virtual void OnPropertyChanged(const std::string& str);
 };
 class WindowCommandSink : public ICommandNotification
 {
 private:
 	Window* m_pw;
 public:
-	WindowCommandSink(Window* pw) throw() :m_pw(pw) {}
-	virtual void OnCommandComplete(const std::string& str, bool bOK) {
-		/*if (str == "query") {
-			if (!bOK) {
-				AtlMessageBox(NULL, _T("error query"), _T("error"), MB_OK);
-			}
-		}*/
-	}
+	WindowCommandSink(Window* pw) throw();
+	virtual void OnCommandComplete(const std::string& str, bool bOK);
 };
 
 class Window

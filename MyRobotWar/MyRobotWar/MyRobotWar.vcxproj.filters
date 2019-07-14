@@ -51,9 +51,6 @@
     <ClCompile Include="Model.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Movejudgement.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -89,16 +86,10 @@
     <ClInclude Include="Fightingjudgement.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Fileio.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="gamemap.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Model.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Movejudgement.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">

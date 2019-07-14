@@ -1,8 +1,10 @@
 #include"Model.h"
-#include<string>
+//#include"RobotData.h"
+//#include<string>
 
-Robotdata::Robotdata(char* na, int mhp, int nhp, int range, int sp, int de) {
-	strcpy(name, na);
+Robotdata::Robotdata(string na, int mhp, int nhp, int range, int sp, int de) {
+	//strcpy(name, na);
+	name = na;
 	maxhp = nhp;
 	nowhp = nhp;
 	moverange = range;
@@ -12,7 +14,7 @@ Robotdata::Robotdata(char* na, int mhp, int nhp, int range, int sp, int de) {
 }
 
 int Robotdata::changehp(int change) {
-	nowhp = nowhp + change;
+	nowhp = nowhp - change;
 	if (nowhp < 0)
 		nowhp = 0;
 	else if (nowhp > maxhp)
@@ -27,7 +29,7 @@ int Robotdata::getcanmove() {
 	return canmove;
 }
 
-char* Robotdata::getname() {
+string Robotdata::getname() {
 	return name;
 }
 
@@ -59,8 +61,13 @@ Robotskill&Robotdata::getskillinfo(int num) {
 	
 	return skill[num];
 }
-
+//
 void Robotdata::setskill(vector<int> skilltype){
-	for(int i;skilltype[i]>=0;skilltype[i]++)
+	int size = skilltype.size();
+	for(int i=0;i<size;i++)
 		skill.push_back(Robotskilllist[skilltype[i]]);
+}
+
+void Robotdata::reset() {
+	canmove = moverange;
 }

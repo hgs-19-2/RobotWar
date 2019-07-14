@@ -2,19 +2,23 @@
 
 #define Maxdistance 20
 
-void attack(Robotskill&skill, Robotdata&target) {
+void Model::attack(Robotskill&skill, Robotdata&target) {
 	int acc = skill.getaccuracy();
 	int sp = target.getspeed();
 	Fightingjudgement judge;
 	if (judge.accuracyjudge(acc, sp))
-		target.changehp(skill.getdamage() - target.getdefense());
+	{
+		int dmg = skill.getdamage() - target.getdefense();
+		target.changehp(dmg);
+	}
 	skill.use();
+	Fire_OnPropertyChanged("robots");
 }
 
-void moveto(location&currentlocation, int movetox, int movetoy) {
-	gamemap map;
-	map.move(currentlocation,movetox,movetoy);
+void Model::moveto(location&currentlocation, int movetox, int movetoy) {
+	gmap.move(currentlocation,movetox,movetoy);
 	currentlocation.setlocation(movetox, movetoy);
+	Fire_OnPropertyChanged("robots");
 }
 
 void Model::cpumove() {
@@ -36,7 +40,7 @@ void Model::cpumove() {
 					int x1 = playerlist[0].Robotlocation[j].getlocationx();
 					int y1 = playerlist[0].Robotlocation[j].getlocationy();
 					tempd = abs(x - x1) + abs(y - y1);
-					if (tempd < Maxdistance)
+					if (tempd < distance)
 					{
 						distance = tempd;
 						target = j;
@@ -97,10 +101,18 @@ void Model::cpumove() {
 						movetox = targetx;
 						needtomove -= abs(dx);
 						if (dy > 0)
-							movetoy = y - needtomove;
-						else
 							movetoy = y + needtomove;
+						else
+							movetoy = y - needtomove;
 					}
+					if (movetox < 0)
+						movetox = 0;
+					else if (movetox > 19)
+						movetox = 19;
+					if (movetoy < 0)
+						movetoy = 0;
+					else if (movetoy > 19)
+						movetoy = 19;
 
 				moveto(playerlist[1].Robotlocation[i],movetox,movetoy);
 					if (attackflag)
@@ -108,6 +120,7 @@ void Model::cpumove() {
 			}
 
 			playerlist[1].done(i);
+			Fire_OnPropertyChanged("robots");
 		}
 	}
 }

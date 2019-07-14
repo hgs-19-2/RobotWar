@@ -1,5 +1,4 @@
 #include "Command.h"
-
 #include "ViewModel.h"
 QueryCommand::QueryCommand(ViewModel* p) throw() : m_pVM(p)
 {

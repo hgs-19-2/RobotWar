@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -123,7 +124,6 @@
     <ClCompile Include="Fileio.cpp" />
     <ClCompile Include="gamemap.cpp" />
     <ClCompile Include="Model.cpp" />
-    <ClCompile Include="Movejudgement.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="RobotData.cpp" />
     <ClCompile Include="Robotlist.cpp" />
@@ -138,10 +138,8 @@
     <ClInclude Include="Common.h" />
     <ClInclude Include="etlbase.h" />
     <ClInclude Include="Fightingjudgement.h" />
-    <ClInclude Include="Fileio.h" />
     <ClInclude Include="gamemap.h" />
     <ClInclude Include="Model.h" />
-    <ClInclude Include="Movejudgement.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="RobotData.h" />
     <ClInclude Include="RobotList.h" />

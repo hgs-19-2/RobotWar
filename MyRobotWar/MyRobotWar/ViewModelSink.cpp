@@ -12,6 +12,14 @@ void ViewModelSink::OnPropertyChanged(const std::string& str)
 		m_pVM->SetRobots();
 		m_pVM->Fire_OnPropertyChanged(str);
 	}
+	else if (str == "win")
+	{
+		m_pVM->Fire_OnPropertyChanged(str);
+	}
+	else if (str == "lose")
+	{
+		m_pVM->Fire_OnPropertyChanged(str);
+	}
 	/*if (str == "Stop_Number") {
 		m_pVM->SetStopNumber(m_pVM->GetModel().GetStopNumber());
 		m_pVM->Fire_OnPropertyChanged(str);//?

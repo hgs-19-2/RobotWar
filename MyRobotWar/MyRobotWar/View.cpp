@@ -1,17 +1,17 @@
 #include "View.h"
 
-#define move_x1 10
-#define move_x2 30
-#define move_y1 20
-#define move_y2 30
-#define skill_x1 10
-#define skill_x2 30
-#define skill_y1 50
-#define skill_y2 100
-#define done_x1 10
-#define done_x2 30
-#define done_y1 110
-#define done_y2 120
+#define move_x1 50
+#define move_x2 100
+#define move_y1 310
+#define move_y2 325
+#define skill_x1 50
+#define skill_x2 100
+#define skill_y1 350
+#define skill_y2 550
+#define done_x1 50
+#define done_x2 100
+#define done_y1 570
+#define done_y2 585
 
 //一个机器人的信息设置
 /*void Robot::SetRobot(const shared_ptr<int>&tx, const shared_ptr<int>&ty, const shared_ptr<int>&tid, const shared_ptr<string>&tname,
@@ -78,14 +78,57 @@ void Robot::UpdateRobot()
 
 	}
 };*/
+WindowPropertySink::WindowPropertySink(Window* pw) throw() :m_pw(pw) {}
+void WindowPropertySink::OnPropertyChanged(const std::string& str)
+{
 
+	if (str == "robots")
+	{
+		IMAGE background;
+		loadimage(&background, "picture\\background.jpg");
+		putimage(0, 0, &background);
+		//robots
+		for (int i = 0; i < (*(m_pw->robots)).size(); i++)
+		{
+			(*(m_pw->robots))[i].ShowoneRobot();
+		}
+		//information of players
+		outtextxy(180, 20, "玩家");
+		outtextxy(1180, 20, "电脑");
+		
+	}
+	else if (str == "win")
+	{
+		IMAGE win;
+		loadimage(&win, "picture\\win.jpg");
+		putimage(400, 200, &win);
+
+	}
+	else if (str == "lose")
+	{
+		IMAGE lose;
+		loadimage(&lose, "picture\\lose.jpg");
+		putimage(400, 200, &lose);
+	}
+}
+WindowCommandSink::WindowCommandSink(Window* pw) throw():m_pw(pw)
+{
+}
+void WindowCommandSink::OnCommandComplete(const std::string& str, bool bOK)
+{
+	/*if (str == "query") {
+		if (!bOK) {
+			AtlMessageBox(NULL, _T("error query"), _T("error"), MB_OK);
+		}
+	}*/
+}
 Window::Window() : m_sinkProperty(std::make_shared<WindowPropertySink>(this)),
 m_sinkCommand(std::make_shared<WindowCommandSink>(this))
 { 
 	//width = x;
 	//height = y; 
 	//initgraph(x, y); 
-	initgraph(1000, 1000);
+	initgraph(1400, 600);
 }
 void Window::RunWindow()
 {
@@ -93,7 +136,19 @@ void Window::RunWindow()
 	//background
 	IMAGE background;
 	loadimage(&background, "picture\\background.jpg");
-	putimage(50, 0, &background);
+	putimage(0, 0, &background);
+	//gameinit
+	std::any param(std::make_any<ThreeInt>());
+	ThreeInt& tp = std::any_cast<ThreeInt&>(param);
+	tp.setThreeInt(0, 0, 0);
+	m_cmdQuery->SetParameter(param);
+	m_cmdQuery->Exec();
+	//stageinit
+	//std::any param(std::make_any<ThreeInt>());
+	//ThreeInt& tp = std::any_cast<ThreeInt&>(param);
+	tp.setThreeInt(0, 1, 0);
+	m_cmdQuery->SetParameter(param);
+	m_cmdQuery->Exec();
 	//robots
 	for (int i = 0; i < robots->size(); i++)
 	{
@@ -101,8 +156,8 @@ void Window::RunWindow()
 		(*robots)[i].ShowoneRobot();
 	}
 	//information of players
-	outtextxy(20, 20, "玩家");
-	outtextxy(600, 20, "电脑");
+	outtextxy(180, 20, "玩家");
+	outtextxy(1180, 20, "电脑");
 	MOUSEMSG m;
 	while (true)
 	{
@@ -117,67 +172,61 @@ void Window::RunWindow()
 				
 				x = (x - start_x) / cell_width;
 				y = y / cell_width;
-				std::any param(std::make_any<ThreeInt>());
-				ThreeInt& tp = std::any_cast<ThreeInt&>(param);
+				//std::any param(std::make_any<ThreeInt>());
+				//ThreeInt& tp = std::any_cast<ThreeInt&>(param);
 				tp.setThreeInt(1,x,y);
 				m_cmdQuery->SetParameter(param);
 				m_cmdQuery->Exec();
 				
 				m = GetMouseMsg();
-				if (m.uMsg == WM_LBUTTONDOWN)
+				while (m.uMsg != WM_LBUTTONDOWN)m = GetMouseMsg();
+				x = m.x;
+				y = m.y;
+				//移动 (2,x,y)
+				if (x > move_x1 && x<move_x2 && y>move_y1 && y < move_y2)
 				{
-					 x = m.x;
-					 y = m.y;
-					//移动 (2,x,y)
-					if (x > move_x1 && x<move_x2 && y>move_y1 && y < move_y2)
+					m = GetMouseMsg();
+					while (m.uMsg != WM_LBUTTONDOWN)m = GetMouseMsg();
+					x = m.x;
+					y = m.y;
+					if (x > start_x&& x < start_x + col * cell_width && y < row * cell_width)
 					{
-						m = GetMouseMsg();
-						if (m.uMsg == WM_LBUTTONDOWN)
-						{
-							x = m.x;
-							y = m.y;
-							if (x > start_x&& x < start_x + col * cell_width && y < row * cell_width)
-							{
-								x = (x - start_x) / cell_width;
-								y = y / cell_width;
-								std::any param(std::make_any<ThreeInt>());
-								ThreeInt& tp = std::any_cast<ThreeInt&>(param);
-								tp.setThreeInt(2, x, y);
-								m_cmdQuery->SetParameter(param);
-								m_cmdQuery->Exec();
-							}
-						}
-					}
-					//技能 3-7 (3-7,x,y)
-					else if (x > skill_x1 && x<skill_x2 && y>skill_y1 && y < skill_y2)
-					{
-						int i = (y - skill_y1) / ((skill_y2 - skill_y1) / 5) + 3;
-						m = GetMouseMsg();
-						if (m.uMsg == WM_LBUTTONDOWN)
-						{
-							x = m.x;
-							y = m.y;
-							if (x > start_x&& x < start_x + col * cell_width && y < row * cell_width)
-							{
-								x = (x - start_x) / cell_width;
-								y = y / cell_width;
-								std::any param(std::make_any<ThreeInt>());
-								ThreeInt& tp = std::any_cast<ThreeInt&>(param);
-								tp.setThreeInt(i, x, y);
-								m_cmdQuery->SetParameter(param);
-								m_cmdQuery->Exec();
-							}
-						}
-					}
-					//结束对当前机器人的操作 (8,0,0)
-					else if (x > done_x1 && x<done_x2 && y>done_y1 && y < done_y2)
-					{
+						x = (x - start_x) / cell_width;
+						y = y / cell_width;
 						std::any param(std::make_any<ThreeInt>());
 						ThreeInt& tp = std::any_cast<ThreeInt&>(param);
-						tp.setThreeInt(8, 0, 0);
+						tp.setThreeInt(2, x, y);
 						m_cmdQuery->SetParameter(param);
 						m_cmdQuery->Exec();
 					}
+				}
+				//技能 3-7 (3-7,x,y)
+				else if (x > skill_x1 && x<skill_x2 && y>skill_y1 && y < skill_y2)
+				{
+					int i = (y - skill_y1) / ((skill_y2 - skill_y1) / 5) + 3;
+					m = GetMouseMsg();
+					while (m.uMsg != WM_LBUTTONDOWN)m = GetMouseMsg();
+					x = m.x;
+					y = m.y;
+					if (x > start_x&& x < start_x + col * cell_width && y < row * cell_width)
+					{
+						x = (x - start_x) / cell_width;
+						y = y / cell_width;
+						std::any param(std::make_any<ThreeInt>());
+						ThreeInt& tp = std::any_cast<ThreeInt&>(param);
+						tp.setThreeInt(i, x, y);
+						m_cmdQuery->SetParameter(param);
+						m_cmdQuery->Exec();
+					}
+				}
+				//结束对当前机器人的操作 (8,0,0)
+				else if (x > done_x1 && x<done_x2 && y>done_y1 && y < done_y2)
+				{
+					std::any param(std::make_any<ThreeInt>());
+					ThreeInt& tp = std::any_cast<ThreeInt&>(param);
+					tp.setThreeInt(8, 0, 0);
+					m_cmdQuery->SetParameter(param);
+					m_cmdQuery->Exec();
 				}
 			}
 		}

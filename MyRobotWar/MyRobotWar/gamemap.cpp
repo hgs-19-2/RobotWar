@@ -2,7 +2,7 @@
 
 
 void gamemap::setrobotmap(vector<int>&typelist, vector<location>&locations,int flag) {
-	int temp = typelist.size;
+	int temp = typelist.size();
 	for (int i = 0; i < temp; i++)
 	{
 		int x = locations[i].getlocationx();
@@ -18,8 +18,8 @@ void gamemap::setmap(){
 }
 
 void gamemap::move(location currentlocation, int movetox, int movetoy) {
-	int temp = map[currentlocation.getlocationx][currentlocation.getlocationy];
-	map[currentlocation.getlocationx][currentlocation.getlocationy] = -1;
+	int temp = map[currentlocation.getlocationx()][currentlocation.getlocationy()];
+	map[currentlocation.getlocationx()][currentlocation.getlocationy()] = -1;
 	map[movetox][movetoy] = temp;
 }
 

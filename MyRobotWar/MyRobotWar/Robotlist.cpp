@@ -5,6 +5,7 @@ void Robotlist::setlist(vector<Robotdata>&Robotdatalist, vector<int>&typelist, v
 	for (int j = 0; j < numofrobot; j++) {
 		playerrobot.push_back(Robotdatalist[typelist[j]]);
 		Robotlocation.push_back(locations[j]);
+		ifdone.push_back(false);
 	}
 }
 
@@ -20,7 +21,10 @@ void Robotlist::reset() {
 	int i = getrobotnumber();
 	for (int j = 0; j < i; j++)
 		if (playerrobot[j].getnowhp())
+		{
 			ifdone[j] = false;
+			playerrobot[j].reset();
+		}
 }
 
 int location::getlocationx(){
@@ -47,4 +51,13 @@ bool Robotlist::ifalldone() {
 
 bool Robotlist::ifonedone(int num) {
 	return ifdone[num];
+}
+
+bool Robotlist::ifalldead() {
+	int i = getrobotnumber();
+	for (int j = 0; j < i; j++) {
+		if (playerrobot[j].getnowhp() != 0)
+			return false;
+	}
+	return true;
 }
