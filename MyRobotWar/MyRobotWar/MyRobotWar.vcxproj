@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{1E5AD5AE-4BAF-4D19-B92D-957A93ED9AD6}</ProjectGuid>
+    <ProjectGuid>{FB3DE409-A9DE-405B-90DA-9B906EC8FA8C}</ProjectGuid>
     <RootNamespace>MyRobotWar</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -116,36 +116,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="App.cpp" />
-    <ClCompile Include="Command.cpp" />
-    <ClCompile Include="Common.cpp" />
-    <ClCompile Include="ComputerLogic.cpp" />
-    <ClCompile Include="Fightingjudgement.cpp" />
-    <ClCompile Include="Fileio.cpp" />
-    <ClCompile Include="gamemap.cpp" />
-    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="App\App.cpp" />
+    <ClCompile Include="Common\Common.cpp" />
+    <ClCompile Include="Model\ComputerLogic.cpp" />
+    <ClCompile Include="Model\Fightingjudgement.cpp" />
+    <ClCompile Include="Model\Fileio.cpp" />
+    <ClCompile Include="Model\gamemap.cpp" />
+    <ClCompile Include="Model\Model.cpp" />
+    <ClCompile Include="Model\RobotData.cpp" />
+    <ClCompile Include="Model\Robotlist.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="RobotData.cpp" />
-    <ClCompile Include="Robotlist.cpp" />
     <ClCompile Include="test.cpp" />
-    <ClCompile Include="View.cpp" />
-    <ClCompile Include="ViewModel.cpp" />
-    <ClCompile Include="ViewModelSink.cpp" />
+    <ClCompile Include="ViewModel\Command.cpp" />
+    <ClCompile Include="ViewModel\ViewModel.cpp" />
+    <ClCompile Include="ViewModel\ViewModelSink.cpp" />
+    <ClCompile Include="View\View.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="App.h" />
-    <ClInclude Include="Command.h" />
-    <ClInclude Include="Common.h" />
-    <ClInclude Include="etlbase.h" />
-    <ClInclude Include="Fightingjudgement.h" />
-    <ClInclude Include="gamemap.h" />
-    <ClInclude Include="Model.h" />
+    <ClInclude Include="App\App.h" />
+    <ClInclude Include="Common\Common.h" />
+    <ClInclude Include="Common\etlbase.h" />
+    <ClInclude Include="Model\Fightingjudgement.h" />
+    <ClInclude Include="Model\gamemap.h" />
+    <ClInclude Include="Model\Model.h" />
+    <ClInclude Include="Model\RobotData.h" />
+    <ClInclude Include="Model\RobotList.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="RobotData.h" />
-    <ClInclude Include="RobotList.h" />
-    <ClInclude Include="View.h" />
-    <ClInclude Include="ViewModel.h" />
-    <ClInclude Include="ViewModelSink.h" />
+    <ClInclude Include="ViewModel\Command.h" />
+    <ClInclude Include="ViewModel\ViewModel.h" />
+    <ClInclude Include="ViewModel\ViewModelSink.h" />
+    <ClInclude Include="View\View.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
