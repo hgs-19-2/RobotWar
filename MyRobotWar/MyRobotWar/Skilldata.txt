@@ -1,1 +1,1 @@
-shotgun#6#4#100#1#rifle#10#8#100#4#knife#2#2#100#10#handgun#4#4#100#10#
+shotgun#6#4#100#20#rifle#10#8#100#10#knife#2#2#100#10#handgun#4#4#100#10#smallcanon#20#12#100#5
