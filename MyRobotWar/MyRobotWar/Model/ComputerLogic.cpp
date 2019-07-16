@@ -18,11 +18,7 @@ void Model::attack(Robotskill&skill, Robotdata&target,location&targetlocation) {
 	string str = "attack" + to_string(x) + "," + to_string(y);
 	Fire_OnPropertyChanged(str);
 	Sleep(1200);
-	if (winorlose() == 1) 
-		Fire_OnPropertyChanged("win");
 
-	if (winorlose() == -1) 
-		Fire_OnPropertyChanged("lose");
 	
 }
 
@@ -41,7 +37,7 @@ void Model::cpumove() {
 		{
 			int x = playerlist[1].Robotlocation[i].getlocationx();
 			int y = playerlist[1].Robotlocation[i].getlocationy();
-			int tempd, target;
+			int tempd, target=-1;
 			int distance = Maxdistance;
 			int p = playerlist[0].getrobotnumber();
 
@@ -59,7 +55,6 @@ void Model::cpumove() {
 					}
 				}
 			}
-
 			int targetx= playerlist[0].Robotlocation[target].getlocationx();
 			int targety= playerlist[0].Robotlocation[target].getlocationy();
 			int xa = 0;int ya=0;
@@ -152,5 +147,17 @@ void Model::cpumove() {
 			Fire_OnPropertyChanged("robots");
 			Sleep(1000);
 		}
+		if (winorlose() == 1)
+		{
+			Fire_OnPropertyChanged("win");
+			return;
+		}
+			
+
+		if (winorlose() == -1) {
+			Fire_OnPropertyChanged("lose");
+			return;
+		}
+			
 	}
 }

@@ -95,6 +95,7 @@ void oneRobot::ShowoneRobot()
 	loadimage(&img, str.c_str());
 	putimage(start_x + x * cell_width, y*cell_width, &img);
 	if (done) outtextxy(start_x + x * cell_width, y*cell_width, "done");
+	if (currentlife == 0)outtextxy(start_x + x * cell_width, y*cell_width, "dead");
 	if (chosen)
 	{
 		IMAGE img2;
@@ -163,7 +164,7 @@ void oneRobot::ShowoneRobot()
 		outtextxy(55, 570, "done");
 		rectangle(50, 565, 200, 595);
 	}
-	if (currentlife == 0)outtextxy(start_x + x * cell_width, y*cell_width, "dead");
+	
 }
 void oneRobot::ShowOneCpuInfo(int num)
 {

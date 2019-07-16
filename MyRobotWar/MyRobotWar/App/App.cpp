@@ -11,7 +11,6 @@ App::~App() throw()
 
 bool App::Init()
 {
-	//if (m_wndMain.Create(NULL, CWindow::rcDefault, _T("Bus Map")) == NULL) {	return false;}
 
 	//objects
 	std::shared_ptr<Model> spModel(std::make_shared<Model>());
@@ -19,8 +18,6 @@ bool App::Init()
 	m_spViewModel->SetModel(spModel);
 	//binding
 	// properties
-	//m_wndMain.m_lblStopNumber.set_Name(m_spViewModel->get_StopNumber());
-	//m_wndMain.m_lblCityName.set_Name(m_spViewModel->get_CityName());
 	m_wndMain.robots = m_spViewModel->get_robots();
 	
 	// commands
